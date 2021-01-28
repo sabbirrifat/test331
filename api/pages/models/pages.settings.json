@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "PageTitle": {
+      "type": "dynamiczone",
+      "components": [
+        "sliders.slider"
+      ]
+    },
+    "test": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test.test"
+    }
+  }
+}

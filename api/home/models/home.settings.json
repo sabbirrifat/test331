@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "Slider1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sliders.slider"
+    },
+    "Slider2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sliders.slider"
+    },
+    "Games": {
+      "type": "dynamiczone",
+      "components": [
+        "test.test"
+      ]
+    },
+    "Dezer": {
+      "type": "dynamiczone",
+      "components": [
+        "sliders.slider"
+      ],
+      "required": true
+    }
+  }
+}
